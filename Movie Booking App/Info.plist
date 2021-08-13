@@ -16,10 +16,28 @@
 	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.832157159209-sa0mscj03j7ffrg1vnb21c77ku91bka5</string>
+				<string>fb545878473428447</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Poppins-Bold.ttf</string>
+		<string>Poppins-ExtraBold.ttf</string>
+		<string>Poppins-ExtraLight.ttf</string>
+		<string>Poppins-Medium.ttf</string>
+		<string>Poppins-Light.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
@@ -34,7 +52,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>Main</string>
+					<string>OnBoarding</string>
 				</dict>
 			</array>
 		</dict>
@@ -44,7 +62,7 @@
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
-	<string>Main</string>
+	<string>OnBoarding</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>
@@ -62,5 +80,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>FacebookAppID</key>
+	<string>545878473428447</string>
+	<key>FacebookClientToken</key>
+	<string>5826449102e2e766b16e5f42a8f72bf9</string>
+	<key>FacebookDisplayName</key>
+	<string>The Movie Booking App - PADC</string>
 </dict>
 </plist>

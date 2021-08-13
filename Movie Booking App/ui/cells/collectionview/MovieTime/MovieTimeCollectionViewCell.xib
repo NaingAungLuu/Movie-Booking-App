@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="MovieTimeCollectionViewCell" id="gTV-IL-0wX" customClass="MovieTimeCollectionViewCell" customModule="Movie_Booking_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="124"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="215" height="124"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sgn-Ik-OPg">
+                        <rect key="frame" x="4" y="4" width="207" height="116"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:30 AM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NhR-4U-xwN">
+                                <rect key="frame" x="71" y="48" width="65.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="NhR-4U-xwN" firstAttribute="centerY" secondItem="Sgn-Ik-OPg" secondAttribute="centerY" id="a26-kN-fge"/>
+                            <constraint firstItem="NhR-4U-xwN" firstAttribute="centerX" secondItem="Sgn-Ik-OPg" secondAttribute="centerX" id="aeA-Wo-np0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Sgn-Ik-OPg" secondAttribute="trailing" constant="4" id="9VY-ZO-6Wg"/>
+                <constraint firstItem="Sgn-Ik-OPg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="ezT-Dk-vsk"/>
+                <constraint firstItem="Sgn-Ik-OPg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="gTg-SW-f6E"/>
+                <constraint firstAttribute="bottom" secondItem="Sgn-Ik-OPg" secondAttribute="bottom" constant="4" id="maM-qg-5cj"/>
+            </constraints>
+            <size key="customSize" width="215" height="124"/>
+            <connections>
+                <outlet property="lblTime" destination="NhR-4U-xwN" id="D9i-Dl-XUH"/>
+            </connections>
+            <point key="canvasLocation" x="180" y="127"/>
+        </collectionViewCell>
+    </objects>
+</document>

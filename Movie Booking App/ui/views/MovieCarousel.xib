@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-Medium.ttf">
+            <string>Poppins-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MovieCarousel" customModule="Movie_Booking_App" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionViewMovies" destination="lPN-tp-gbH" id="Ovh-QQ-Y4d"/>
+                <outlet property="labelHeader" destination="U0N-jW-bWQ" id="WAz-9Y-uSV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="866"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V4Z-T6-uqK">
+                    <rect key="frame" x="0.0" y="0.0" width="438" height="452"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Enter Text Here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0N-jW-bWQ">
+                            <rect key="frame" x="24" y="16" width="390" height="24"/>
+                            <fontDescription key="fontDescription" name="Poppins-Medium" family="Poppins" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="lPN-tp-gbH">
+                            <rect key="frame" x="0.0" y="52" width="438" height="400"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="400" id="tjt-iU-VSe"/>
+                            </constraints>
+                            <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="p5u-42-lzT">
+                                <size key="itemSize" width="128" height="128"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="12" minY="0.0" maxX="12" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                        </collectionView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="lPN-tp-gbH" firstAttribute="leading" secondItem="V4Z-T6-uqK" secondAttribute="leading" id="1CX-SR-ziF"/>
+                        <constraint firstItem="U0N-jW-bWQ" firstAttribute="leading" secondItem="V4Z-T6-uqK" secondAttribute="leading" constant="24" id="2k4-DS-BF8"/>
+                        <constraint firstAttribute="trailing" secondItem="U0N-jW-bWQ" secondAttribute="trailing" constant="24" id="3ng-CR-3gQ"/>
+                        <constraint firstItem="U0N-jW-bWQ" firstAttribute="top" secondItem="V4Z-T6-uqK" secondAttribute="top" constant="16" id="LFe-qv-1hh"/>
+                        <constraint firstAttribute="trailing" secondItem="lPN-tp-gbH" secondAttribute="trailing" id="l7U-dx-671"/>
+                        <constraint firstItem="lPN-tp-gbH" firstAttribute="top" secondItem="U0N-jW-bWQ" secondAttribute="bottom" constant="12" id="oy7-03-GRa"/>
+                        <constraint firstAttribute="bottom" secondItem="lPN-tp-gbH" secondAttribute="bottom" id="to0-d8-NZA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="V4Z-T6-uqK" secondAttribute="trailing" id="GFc-y4-D59"/>
+                <constraint firstItem="V4Z-T6-uqK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="gyP-T2-DtL"/>
+                <constraint firstItem="V4Z-T6-uqK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="rTj-kz-Oee"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="26.086956521739133" y="-313.39285714285711"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

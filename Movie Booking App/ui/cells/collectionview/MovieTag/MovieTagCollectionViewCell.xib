@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Poppins-SemiBold.ttf">
+            <string>Poppins-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieTagCollectionViewCell" customModule="Movie_Booking_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="213" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="213" height="130"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FLe-l1-HWE" userLabel="Tag View">
+                        <rect key="frame" x="0.0" y="0.0" width="213" height="130"/>
+                        <subviews>
+                            <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="icE-Kk-n8G">
+                                <rect key="frame" x="0.0" y="0.0" width="213" height="130"/>
+                                <color key="backgroundColor" name="color_accent"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adventure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzw-pl-cow">
+                                <rect key="frame" x="24" y="8" width="165" height="114"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                <fontDescription key="fontDescription" name="Poppins-SemiBold" family="Poppins" pointSize="14"/>
+                                <color key="textColor" name="color_accent"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="icE-Kk-n8G" firstAttribute="leading" secondItem="FLe-l1-HWE" secondAttribute="leading" id="2DK-KU-HWz"/>
+                            <constraint firstAttribute="bottom" secondItem="icE-Kk-n8G" secondAttribute="bottom" id="4Xl-BJ-ent"/>
+                            <constraint firstItem="icE-Kk-n8G" firstAttribute="top" secondItem="FLe-l1-HWE" secondAttribute="top" id="5E7-pM-jJn"/>
+                            <constraint firstAttribute="bottom" secondItem="xzw-pl-cow" secondAttribute="bottom" constant="8" id="GJY-MM-bGw"/>
+                            <constraint firstItem="xzw-pl-cow" firstAttribute="top" secondItem="FLe-l1-HWE" secondAttribute="top" constant="8" id="LmS-UU-vwl"/>
+                            <constraint firstAttribute="trailing" secondItem="icE-Kk-n8G" secondAttribute="trailing" id="hZG-nf-2PF"/>
+                            <constraint firstItem="xzw-pl-cow" firstAttribute="leading" secondItem="FLe-l1-HWE" secondAttribute="leading" constant="24" id="hoa-uC-Hgq"/>
+                            <constraint firstAttribute="trailing" secondItem="xzw-pl-cow" secondAttribute="trailing" constant="24" id="sG6-8m-hmm"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="FLe-l1-HWE" secondAttribute="bottom" id="jZ5-y6-cKI"/>
+                <constraint firstItem="FLe-l1-HWE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="lbk-Uh-Qzh"/>
+                <constraint firstItem="FLe-l1-HWE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="lwt-84-FoF"/>
+                <constraint firstItem="FLe-l1-HWE" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qa9-8z-pcF"/>
+                <constraint firstItem="FLe-l1-HWE" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="vQg-Od-gFT"/>
+                <constraint firstAttribute="trailing" secondItem="FLe-l1-HWE" secondAttribute="trailing" id="wWo-0k-d7U"/>
+            </constraints>
+            <size key="customSize" width="213" height="130"/>
+            <connections>
+                <outlet property="lblTag" destination="xzw-pl-cow" id="4XX-DD-YgV"/>
+                <outlet property="viewContainer" destination="icE-Kk-n8G" id="vVj-hv-0WP"/>
+            </connections>
+            <point key="canvasLocation" x="113.768115942029" y="135.26785714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="color_accent">
+            <color red="0.36300000548362732" green="0.24699999392032623" blue="0.88200002908706665" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
+</document>

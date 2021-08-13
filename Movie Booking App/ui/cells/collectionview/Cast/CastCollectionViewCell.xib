@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CastCollectionViewCell" customModule="Movie_Booking_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="191" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="191" height="201"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q7a-OI-8qq">
+                        <rect key="frame" x="55.5" y="60.5" width="80" height="80"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="actor" translatesAutoresizingMaskIntoConstraints="NO" id="YRp-6N-w9j">
+                                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="3Ad-ep-cPq"/>
+                                    <constraint firstAttribute="height" constant="80" id="T7G-Ej-7Qp"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YRp-6N-w9j" firstAttribute="top" secondItem="q7a-OI-8qq" secondAttribute="top" id="In8-fn-oLX"/>
+                            <constraint firstAttribute="trailing" secondItem="YRp-6N-w9j" secondAttribute="trailing" id="MSE-De-8iW"/>
+                            <constraint firstAttribute="bottom" secondItem="YRp-6N-w9j" secondAttribute="bottom" id="eRY-po-diL"/>
+                            <constraint firstItem="YRp-6N-w9j" firstAttribute="leading" secondItem="q7a-OI-8qq" secondAttribute="leading" id="rBp-7Z-ouM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="q7a-OI-8qq" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="8Ys-0Y-AZY"/>
+                <constraint firstItem="q7a-OI-8qq" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="OQM-pH-dvb"/>
+            </constraints>
+            <size key="customSize" width="191" height="201"/>
+            <connections>
+                <outlet property="ivProfile" destination="YRp-6N-w9j" id="mqk-jb-9et"/>
+            </connections>
+            <point key="canvasLocation" x="234.05797101449278" y="154.35267857142856"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="actor" width="426.66665649414062" height="639.33331298828125"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieSeatCollectionViewCell" customModule="Movie_Booking_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="172" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="172" height="127"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VFY-uu-WuC">
+                        <rect key="frame" x="4" y="4" width="164" height="119"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PIq-ag-zXZ">
+                                <rect key="frame" x="76" y="49" width="12" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="PIq-ag-zXZ" firstAttribute="centerX" secondItem="VFY-uu-WuC" secondAttribute="centerX" id="VJm-Tr-6q9"/>
+                            <constraint firstItem="PIq-ag-zXZ" firstAttribute="centerY" secondItem="VFY-uu-WuC" secondAttribute="centerY" id="pxe-i8-Y2f"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="VFY-uu-WuC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="4" id="ZWG-Yr-oru"/>
+                <constraint firstAttribute="trailing" secondItem="VFY-uu-WuC" secondAttribute="trailing" constant="4" id="s9G-DB-YGd"/>
+                <constraint firstAttribute="bottom" secondItem="VFY-uu-WuC" secondAttribute="bottom" constant="4" id="swY-gQ-xJ1"/>
+                <constraint firstItem="VFY-uu-WuC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="4" id="yOr-Bn-i0J"/>
+            </constraints>
+            <size key="customSize" width="172" height="127"/>
+            <connections>
+                <outlet property="containerViewSeat" destination="VFY-uu-WuC" id="5DY-Td-N7j"/>
+                <outlet property="lblSeat" destination="PIq-ag-zXZ" id="xJe-Os-GvJ"/>
+            </connections>
+            <point key="canvasLocation" x="-81" y="111"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

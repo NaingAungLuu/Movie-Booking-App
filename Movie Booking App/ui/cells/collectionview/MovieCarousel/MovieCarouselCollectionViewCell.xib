@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MovieCarouselCollectionViewCell" customModule="Movie_Booking_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="273" height="450"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="273" height="450"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cgn-jP-0aI">
+                        <rect key="frame" x="0.0" y="0.0" width="273" height="400"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="poster_detective_pikachu" translatesAutoresizingMaskIntoConstraints="NO" id="uXe-rd-qDs" userLabel="Poster Image">
+                                <rect key="frame" x="12" y="12" width="249" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="DNt-WA-sp1"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Detective Pikachu" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95i-WB-JlC" userLabel="Movie Name">
+                                <rect key="frame" x="0.0" y="274" width="273" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="7" translatesAutoresizingMaskIntoConstraints="NO" id="8vd-os-jkc" userLabel="Movie Info">
+                                <rect key="frame" x="0.0" y="301.5" width="273" height="17"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Mystery/Adventure . 1h 41m">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="12" name="Poppins-Medium"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="95i-WB-JlC" firstAttribute="top" secondItem="uXe-rd-qDs" secondAttribute="bottom" constant="12" id="1Q8-z2-DRp"/>
+                            <constraint firstAttribute="trailing" secondItem="95i-WB-JlC" secondAttribute="trailing" id="FVi-mw-qXO"/>
+                            <constraint firstItem="95i-WB-JlC" firstAttribute="centerX" secondItem="cgn-jP-0aI" secondAttribute="centerX" id="L6v-9p-0sk"/>
+                            <constraint firstAttribute="trailing" secondItem="8vd-os-jkc" secondAttribute="trailing" id="Qf6-IP-NNG"/>
+                            <constraint firstAttribute="height" constant="400" id="aNk-DA-yLh"/>
+                            <constraint firstItem="8vd-os-jkc" firstAttribute="top" secondItem="95i-WB-JlC" secondAttribute="bottom" constant="8" id="auC-M9-EPG"/>
+                            <constraint firstItem="uXe-rd-qDs" firstAttribute="top" secondItem="cgn-jP-0aI" secondAttribute="top" constant="12" id="cJD-xa-af2"/>
+                            <constraint firstItem="8vd-os-jkc" firstAttribute="leading" secondItem="cgn-jP-0aI" secondAttribute="leading" id="dvG-CL-1O2"/>
+                            <constraint firstItem="uXe-rd-qDs" firstAttribute="leading" secondItem="cgn-jP-0aI" secondAttribute="leading" constant="12" id="lXH-X4-L1H"/>
+                            <constraint firstAttribute="trailing" secondItem="uXe-rd-qDs" secondAttribute="trailing" constant="12" id="nf5-C1-c0d"/>
+                            <constraint firstItem="uXe-rd-qDs" firstAttribute="centerX" secondItem="cgn-jP-0aI" secondAttribute="centerX" id="qzq-7Z-Ljb"/>
+                            <constraint firstItem="95i-WB-JlC" firstAttribute="leading" secondItem="cgn-jP-0aI" secondAttribute="leading" id="yvN-tQ-dwi"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="cgn-jP-0aI" secondAttribute="trailing" id="ASD-1R-wHG"/>
+                <constraint firstItem="cgn-jP-0aI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="YZ7-GI-Go0"/>
+                <constraint firstItem="cgn-jP-0aI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cfC-nH-Z1G"/>
+            </constraints>
+            <size key="customSize" width="273" height="450"/>
+            <connections>
+                <outlet property="imageMoviePoster" destination="uXe-rd-qDs" id="RJB-cn-O81"/>
+                <outlet property="lblMovieInfo" destination="8vd-os-jkc" id="nga-DG-uvi"/>
+                <outlet property="lblMovieName" destination="95i-WB-JlC" id="QMg-w0-5ow"/>
+            </connections>
+            <point key="canvasLocation" x="129.71014492753625" y="132.58928571428572"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="poster_detective_pikachu" width="337.33334350585938" height="500"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
